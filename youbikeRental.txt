@@ -1,0 +1,17 @@
+YOUBIKE Rental Video Script
+ 
+ Brief: Explanation of Youbike registration with phone number and yoyo card. Assumes viewer can obtain number and card first.
+ 
+Hello, Justin from Cycle Taiwan, with an instructional today on how to sign up for Taiwan's popular YouBike A-to-B bicycle sharing service. Youbike operates in the northwest of the country from Taipei down to Taichung, but similar schemes exist in every major city on the island. To start, you'll need a transit smartcard and a local cellphone number. Smartcards can be purchased and reloaded at any convenience store on the island, and are split between two companies: EasyCardCorp and iPass. Either card will work, and is also good for metro, bus, and local rail transit around the island. A local phone number can be had by purchasing a SIM card or renting a phone from one of the islands carriers. For a complete walkthrough, check the description for the link to the Prepaid Data Sim Card Fandom.
+
+Once you've got your phone and smartcard in hand, it's time to register! While you can register with the kiosk computer at any YouBike site, it's much easier to register online ahead of time if you can. If you have trouble arranging the phone or card, you can also use a credit card at the YouBike stations, but it is a more cumbersome process.
+
+To register, head on over to i.youbike.com.tw, or click the link in the description. If you explore the menus, you'll find a Station Map with the location and status of every station in their network. I recommend downloading their app to your phone for finding stations when you're on the go!
+
+The website also features an introduction to their bicycle model, the docking stations, and the station kiosks. Pricing is based on 30-minute blocks, and gets more expensive if you keep the bike for longer. Return it as soon as you're done with it and keep the bikes circulating!
+
+To register, look to the top-right corner of the page, and click "register". You'll first be hit with the Term's of Service. Of particular note is the replacement fee if you lose or don't return the bike. 9,000NT is about $300 US, these are not cheap wheels! Once you've read the entire agreement, check the box at the bottom and proceed to the next page.
+
+The next page shows a quick explanation of how to rent and return the bikes. With your registed smartcard, it's a fast and painless process. Don't forget to scan your card again when you return the bike! When you're comfortable with the steps, click through to the registration page. 
+
+Step one is to fill in the form. The only tricky part is the ID number. If you do not have resdency in Taiwan, you must select "nothing more." You will get an alarming pop-up about not being insured if you do not provide an ID. If this concerns you, quit the process and use your credit card at the kiosk instead. Once you have filled in all but the last field, click "Get Verification Code", enter the code in the SMS sent to your phone, and click "Register". If all is well, you'll reach the confirmation page, and you're ready to ride! Make sure to give your bike a quick once-over before you rent it, and avoid any bike with the seat turned backwards: that's a signal for them to be picked up for maintenance! Enjoy your ride!

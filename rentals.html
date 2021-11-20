@@ -1,0 +1,207 @@
+<!-- Rentals -->
+<!--
+  Author: Justin Henley
+  Email: jahenley@mail.fhsu.edu
+  FHSU INF250_VA_U2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cycle Taiwan: Rentals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/final.css" media="screen">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Mulish:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <style>
+    form {
+      padding: 1em;
+      font-family: Arial, sans-serif;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-top: 5px solid var(--main-color);
+      border-bottom: 5px solid var(--main-color);
+    }
+    label {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    fieldset {
+      border: 2px solid var(--alternate-color);
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: var(--nav-font);
+    }
+    legend {
+      font-family: var(--heading-font);
+    }
+    #bikeArea label {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .columnBox {
+      display: flex;
+      flex-flow: column wrap;
+    }
+    .rowBox {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    textarea {
+      width: 20em;
+      height: 10em;
+    }
+    form ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 5px;
+    }
+
+    /* For larger screens */
+    @media screen and (min-width: 800px) {
+      main {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: auto;
+      }
+      form {
+        border: none;
+        border-left: 5px solid var(--main-color);
+      }
+    }
+    input[type="submit"], input[type="reset"] {
+      width: 100%;
+      font-family: var(--nav-font);
+      font-size: medium;
+      color: white;
+      background-color: var(--main-color);
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: var(--second-color);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">  <!-- ID provides for liquid layout -->
+    <header>
+      <a href="final.html"><h1>Cycle Taiwan</h1></a>
+    </header>
+    <nav>
+      <ul>
+        <!--  'Home' link hides itself at low res, since header is a link to home as well.
+              Home nav will be hidden at low  resolution on homepage only, to allow
+              more space for navigation via the homepage links.  -->
+        <li class="hideMobile"><a href="final.html">Home</a></li>
+        <li><a href="route1.html">Route&#10023;1</a></li>
+        <li><a href="cities.html">Cities</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="gear.html">Gear</a></li>
+      </ul>
+    </nav>
+    <main class="mainBorder">
+      <!-- div to keep contact together -->
+      <div class="contentDiv">
+        <h2>Rental Request Form</h2>
+        <!-- VIDEO GOES HERE -->
+        <p>Renting bicycles is a hassle. Calling shops all over the island,
+          struggling through language barrier, arranging for pick-up and drop-off.
+          What a drag! Fill out the form here, and we will contact you with quotes
+          from our network of partner shops.</p>
+        <p>If you only need a handy bike around the city, our video below will
+          explain how to register for Taiwan's popular
+          <a href="https://i.youbike.com.tw/home">YouBike bike share</a> system.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fz4moNox9vs"
+           allow="accelerometer; autoplay; encrypted-media; gyroscope;
+           picture-in-picture" allowfullscreen></iframe>
+        <p>Video Transcript: <a href="youbikeRental.txt">YoubikeRental.txt</a></p>
+      </div>
+      <!-- Form for bike rental -->
+      <form action="scripts/submit.php" method="post">
+        <fieldset id="tripArea">
+          <legend>Tell Us About Your Trip</legend>
+          <label for="startCity">Starting City
+          <select name="startCity" id="startCity" required="required">
+            <option disabled="disabled" selected="selected" value="">Select a city</option>
+            <option value="Taipei">Taipei</option>
+            <option value="Taichung">Taichung</option>
+            <option value="Tainan">Tainan</option>
+            <option value="Kaohsiung">Kaohsiung</option>
+            <option value="Hualien">Hualien</option>
+            <option value="Taitung">Taitung</option>
+          </select></label>
+          <label for="endCity">Final City
+          <select name="endCity" id="endCity" required="required">
+            <option disabled="disabled" selected="selected" value="">Select a city</option>
+            <option value="Taipei">Taipei</option>
+            <option value="Taichung">Taichung</option>
+            <option value="Tainan">Tainan</option>
+            <option value="Kaohsiung">Kaohsiung</option>
+            <option value="Hualien">Hualien</option>
+            <option value="Taitung">Taitung</option>
+          </select></label>
+          <label for="startDate">From
+          <input type="date" name="startDate" id="startDate" required="required"></label>
+          <label for="endDate">Until
+          <input type="date" name="endDate" id="endDate" required="required"></label>
+        </fieldset>
+        <fieldset id="bikeArea">
+          <legend>Bike Preferences</legend>
+          <!-- div to allow to display the two lists next to each other if room -->
+          <div class="rowBox">
+            <div class="columnBox">
+              <!-- Checkboxes for desired bicycle type(s) -->
+              <label for="bike">Style(s):</label>
+              <ul>
+                <li><input type="checkbox" name="roadBike" id="bike" value="yes"> Road</li>
+                <li><input type="checkbox" name="tourBike" value="yes"> Touring</li>
+                <li><input type="checkbox" name="mtbBike" value="yes"> MTB</li>
+              </ul>
+            </div>
+            <div class="columnBox">
+              <!-- Optional equipment requirements -->
+                <label for="equip">Equipment:</label>
+                <ul>
+                  <li><input type="checkbox" name="luggage" id="equip" value="yes"> Luggage</li>
+                  <li><input type="checkbox" name="tools" value="yes"> Tool Kit</li>
+                  <li><input type="checkbox" name="flats" value="yes"> Flat Kit</li>
+                </ul>
+            </div>
+          </div>
+
+        </fieldset>
+        <fieldset id="contactArea">
+          <legend>Contact Information</legend>
+          <div class="rowBox">
+            <div class="columnBox">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" maxlength="200" required="required">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" maxlength="200" required="required">
+              <label for="contactEmail">E-mail</label>
+              <input type="email" name="contactEmail" id="contactEmail" required="required">
+            </div>
+            <div class="columnBox">
+              <label for="comments">Comments</label>
+              <textarea name="comments" id="comments" placeholder="(Optional) Please leave any additional comments here." maxlength="1000" rows="5"></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <input type="submit" name="submit" value="Let's Ride!">
+        <input type="reset" name="reset" value="Reset Form">
+      </form>
+    </main>
+
+    <footer>
+      Copyright &copy; 2020 <a href="mailto:jahenley@mail.fhsu.edu">Justin Henley</a>
+    </footer>
+  </div>
+</body>
+</html>
