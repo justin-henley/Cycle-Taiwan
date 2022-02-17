@@ -7,95 +7,114 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Cycle Taiwan: Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/final.css" media="screen">
-  <link rel="stylesheet" href="css/print.css" media="print">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Mulish:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-</head>
+  <head>
+    <title>Cycle Taiwan: Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/final.css" media="screen" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Mulish:wght@700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <div id="wrapper">  <!-- ID provides for liquid layout -->
-    <header>
-      <a href="final.html"><h1>Cycle Taiwan</h1></a>
-    </header>
+  <body>
+    <div id="wrapper">
+      <!-- ID provides for liquid layout -->
+      <header>
+        <a href="index.html"><h1>Cycle Taiwan</h1></a>
+      </header>
 
-    <nav>  <!-- ID allows for special formatting rules on homepage only  -->
-      <ul>
-        <!--  'Home' link hides itself at low res, since header is a link to home as well.
+      <nav>
+        <!-- ID allows for special formatting rules on homepage only  -->
+        <ul>
+          <!--  'Home' link hides itself at low res, since header is a link to home as well.
               Home nav will be hidden at low  resolution on homepage only, to allow
               more space for navigation via the homepage links.  -->
-        <li class="hideMobile"><a href="index.html">Home</a></li>
-        <li><a href="route1.html">Route&#10023;1</a></li>
-        <li><a href="cities.html">Cities</a></li>
-        <li><a href="rentals.html">Rentals</a></li>
-        <li><a href="gear.html">Gear</a></li>
-      </ul>
-    </nav>
+          <li class="hideMobile"><a href="index.html">Home</a></li>
+          <li><a href="route1.html">Route&#10023;1</a></li>
+          <li><a href="cities.html">Cities</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="gear.html">Gear</a></li>
+        </ul>
+      </nav>
 
-    <main>
-      <!--  Main page is a call to visit other pages, shown in a grid.
+      <main>
+        <!--  Main page is a call to visit other pages, shown in a grid.
             Pictures and descriptions may be included depending on viewport size.
             At mobile viewport sizes, the descriptions are hidden.  -->
-      <div id="homeButtons">
-        <ul>
-          <li><a href="route1.html">
-            <img src="images/taipei.jpg" alt="Taipei 101">
-            <!-- Image source: Remi Yuan, https://unsplash.com/photos/JMB3Efb8yoQ -->
-            <div>
-              <h3>Round-Island Cycling</h3>
-              <p class="hideMobile">  <!-- Not shown at low res -->
-                Route 1 circles the island on a combination of marked public
-                roads and cycling paths.  Rest and repair stations abound, and
-                campsites are available along the way!
-              </p>
-            </div>
-          </a></li>
-          <li><a href="cities.html">
-            <img src="images/local.jpg" alt="Cycling lane in road">
-            <!-- Image source: Andrew Gook, https://unsplash.com/photos/VRLHw_rBjIw -->
-            <div>
-              <h3>Local Routes</h3>
-              <p class="hideMobile">  <!-- Not shown at low res -->
-                Taiwan's major cities have a variety of scenic cycling routes.
-                Downtown bikelanes, riverside paths, and old railroad tunnels and
-                bridges add life to your ride!
-              </p>
-            </div>
-          </a></li>
-          <li><a href="rentals.html">
-            <img src="images/rentals.jpg" alt="Public Bicycle Rental">
-            <!-- Image source: Markus Winkler, https://unsplash.com/photos/QjRk3rj2O1c -->
-            <div>
-              <h3>Need wheels?</h3>
-              <p class="hideMobile">  <!-- Not shown at low res -->
-                Rentals are available at individual bike shops around the island,
-                including luggage-equipped touring bikes on the scenic east coast.
-              </p>
-            </div>
-          </a></li>
-          <li><a href="gear.html">
-            <img src="images/gear.jpg" alt="Bikepacking Setup">
-            <!-- Image source: Radoslaw Prekurat, https://unsplash.com/photos/SHXeqS9y0RE -->
-            <div>
-              <h3>Need gear?</h3>
-              <p class="hideMobile">  <!-- Not shown at low res -->
-                If you left something at home or lost something along the way,
-                Taiwan is home to some of the world's largest cycling brands.
-                No matter what you need, it's here.
-              </p>
-            </div>
-          </a></li>
-        </ul>
-      </div>
-    </main>
+        <div id="homeButtons">
+          <ul>
+            <li>
+              <a href="route1.html">
+                <img src="images/taipei.jpg" alt="Taipei 101" />
+                <!-- Image source: Remi Yuan, https://unsplash.com/photos/JMB3Efb8yoQ -->
+                <div>
+                  <h3>Round-Island Cycling</h3>
+                  <p class="hideMobile">
+                    <!-- Not shown at low res -->
+                    Route 1 circles the island on a combination of marked public
+                    roads and cycling paths. Rest and repair stations abound,
+                    and campsites are available along the way!
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="cities.html">
+                <img src="images/local.jpg" alt="Cycling lane in road" />
+                <!-- Image source: Andrew Gook, https://unsplash.com/photos/VRLHw_rBjIw -->
+                <div>
+                  <h3>Local Routes</h3>
+                  <p class="hideMobile">
+                    <!-- Not shown at low res -->
+                    Taiwan's major cities have a variety of scenic cycling
+                    routes. Downtown bikelanes, riverside paths, and old
+                    railroad tunnels and bridges add life to your ride!
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="rentals.html">
+                <img src="images/rentals.jpg" alt="Public Bicycle Rental" />
+                <!-- Image source: Markus Winkler, https://unsplash.com/photos/QjRk3rj2O1c -->
+                <div>
+                  <h3>Need wheels?</h3>
+                  <p class="hideMobile">
+                    <!-- Not shown at low res -->
+                    Rentals are available at individual bike shops around the
+                    island, including luggage-equipped touring bikes on the
+                    scenic east coast.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="gear.html">
+                <img src="images/gear.jpg" alt="Bikepacking Setup" />
+                <!-- Image source: Radoslaw Prekurat, https://unsplash.com/photos/SHXeqS9y0RE -->
+                <div>
+                  <h3>Need gear?</h3>
+                  <p class="hideMobile">
+                    <!-- Not shown at low res -->
+                    If you left something at home or lost something along the
+                    way, Taiwan is home to some of the world's largest cycling
+                    brands. No matter what you need, it's here.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
 
-    <footer>
-      Copyright &copy; 2020 <a href="mailto:jahenley@mail.fhsu.edu">Justin Henley</a>
-    </footer>
-  </div>
-</body>
+      <footer>
+        Copyright &copy; 2022
+        <a href="https://www.justin-henley.com" target="blank">Justin Henley</a>
+      </footer>
+    </div>
+  </body>
 </html>
